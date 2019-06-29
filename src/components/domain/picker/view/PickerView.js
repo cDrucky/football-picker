@@ -1,15 +1,14 @@
 import React, { Component } from "react"
-
+import PickerCard from "../widget/PickerCard"
 
 class PickerView extends Component {
     constructor(props) {
         super(props)
-        this.state = {  }
+        this.state = {data: []}
     }
     render() { 
-        return (  
-            <h1>My Picker View</h1>
-        )
+        return <PickerCard games={this.state.data}/>
+
     }
 }
  
