@@ -1,12 +1,17 @@
 import React from "react" 
 import { render } from "react-dom"
-import { HashRouters, Route, Switch} from "react-router-dom"
+import { HashRouter, Route, Switch} from "react-router-dom"
+import PickerView from "./components/domain/picker/view/PickerView";
 
 const App = () => {
         
         return (
                 <div>
-                    <h1>New React App</h1>
+                    <HashRouter>
+                        <Switch>
+                        <Route path="/home" name="Home" component={PickerView} />
+                        </Switch>
+                    </HashRouter>
                 </div>
             
                  
